@@ -10,6 +10,7 @@ public class WeaponManager : MonoBehaviour
     public SwordScript[] weapons;
     public bool[] ownedWeapon;
     public int weaponActive;
+    bool fullAuto;
         
     void Start()
     {
@@ -28,6 +29,7 @@ public class WeaponManager : MonoBehaviour
             weapons[2].DeactivateWeapon();
             weapons[3].DeactivateWeapon();
             weaponActive = 0;
+            fullAuto = false;
         }
         if (Input.GetKeyDown(KeyCode.Alpha2) && ownedWeapon[0])
         {
@@ -36,6 +38,7 @@ public class WeaponManager : MonoBehaviour
             weapons[2].DeactivateWeapon();
             weapons[3].DeactivateWeapon();
             weaponActive = 1;
+            fullAuto = true;
         }
         if (Input.GetKeyDown(KeyCode.Alpha3) && ownedWeapon[1])
         {
@@ -44,6 +47,7 @@ public class WeaponManager : MonoBehaviour
             weapons[1].DeactivateWeapon();
             weapons[3].DeactivateWeapon();
             weaponActive = 2;
+            fullAuto = false;
         }
         if (Input.GetKeyDown(KeyCode.Alpha4) && ownedWeapon[2])
         {
@@ -52,13 +56,19 @@ public class WeaponManager : MonoBehaviour
             weapons[1].DeactivateWeapon();
             weapons[2].DeactivateWeapon();
             weaponActive = 3;
+            fullAuto = false;
         }
         // ================================================
 
 
         //Weapon Function
         // ================================================
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0) && !fullAuto)
+        {
+            weapons[weaponActive].OnFire(attackPoint);
+        }
+
+        if (Input.GetKey(KeyCode.Mouse0) && fullAuto)
         {
             weapons[weaponActive].OnFire(attackPoint);
         }

@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DeleteMe : MonoBehaviour
+public class EnemyProjectile : MonoBehaviour
 {
-
     public float timeTilDeath;
     float deathDelta;
     public int damage;
@@ -37,14 +36,10 @@ public class DeleteMe : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Enemy")
+        if (other.tag == "Player")
         {
-            Debug.Log("Hit enemy!");
-            other.GetComponent<EnemyScript>().Damaged(damage);
-        }
-        if (other.tag == "Player" && selfDamage)
-        {
-            other.GetComponent<PlayerManager>().Damaged(damage/2);
+            Debug.Log("Hit player!");
+            other.GetComponent<PlayerManager>().Damaged(damage);
         }
         if (isBullet)
         {

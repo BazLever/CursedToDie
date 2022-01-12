@@ -12,9 +12,11 @@ public class SwordScript : MonoBehaviour
     public int damage = 50;
     public float attackSpeed = 0.25f;
     float attackSpeedDelta;
+    public bool fullAuto = false;
 
     bool isActive = false;
     bool canAttack;
+
 
 
     void Start()

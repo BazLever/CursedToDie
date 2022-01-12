@@ -7,6 +7,7 @@ public class PlayerManager : MonoBehaviour
     public bool killPlayer = false;
     [Header("PlayerStats")]
     public int playerHealth;
+    public int playerHealthMax;
 
     [Header("Other")]
     public GameObject mainCamera;
@@ -17,6 +18,7 @@ public class PlayerManager : MonoBehaviour
 
     void Start()
     {
+        playerHealth = playerHealthMax;
         playerMovement = GetComponent<PlayerMovement>();
     }
 
@@ -36,5 +38,14 @@ public class PlayerManager : MonoBehaviour
         playerMovement.OnDeath();
         playerDeadBody.SetActive(true);
         mainCamera.SetActive(false);
+    }
+
+    public void Damaged(int damage)
+    {
+        playerHealth -= damage;
+        if (playerHealth <= 0)
+        {
+            PlayerDeath();
+        }
     }
 }

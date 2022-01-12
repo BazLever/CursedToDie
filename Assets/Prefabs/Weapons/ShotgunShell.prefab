@@ -49,10 +49,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeTilDeath: 3
-  damage: 10
+  damage: 8
   isBullet: 1
   rbSpeed: 4000
   bulletVariance: 5
+  hitEffect: {fileID: 3194781780329869124, guid: 1197eaed5df3dd54ea49076c573fc5bf, type: 3}
 --- !u!33 &7844929655120629301
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -194,10 +195,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeTilDeath: 3
-  damage: 10
+  damage: 8
   isBullet: 1
   rbSpeed: 4000
   bulletVariance: 5
+  hitEffect: {fileID: 3194781780329869124, guid: 1197eaed5df3dd54ea49076c573fc5bf, type: 3}
 --- !u!33 &6129359974187702851
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -339,10 +341,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeTilDeath: 3
-  damage: 10
+  damage: 8
   isBullet: 1
   rbSpeed: 4000
   bulletVariance: 5
+  hitEffect: {fileID: 3194781780329869124, guid: 1197eaed5df3dd54ea49076c573fc5bf, type: 3}
 --- !u!33 &5715686722410422023
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -492,6 +495,7 @@ MonoBehaviour:
   isBullet: 0
   rbSpeed: 0
   bulletVariance: 0
+  hitEffect: {fileID: 0}
 --- !u!1 &3647722909937425313
 GameObject:
   m_ObjectHideFlags: 0
@@ -541,10 +545,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeTilDeath: 3
-  damage: 10
+  damage: 8
   isBullet: 1
   rbSpeed: 4000
   bulletVariance: 5
+  hitEffect: {fileID: 3194781780329869124, guid: 1197eaed5df3dd54ea49076c573fc5bf, type: 3}
 --- !u!33 &3647722909937425326
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -686,10 +691,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeTilDeath: 3
-  damage: 10
+  damage: 8
   isBullet: 1
   rbSpeed: 4000
   bulletVariance: 5
+  hitEffect: {fileID: 3194781780329869124, guid: 1197eaed5df3dd54ea49076c573fc5bf, type: 3}
 --- !u!33 &5660266156087620312
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -831,10 +837,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeTilDeath: 3
-  damage: 10
+  damage: 8
   isBullet: 1
   rbSpeed: 4000
   bulletVariance: 5
+  hitEffect: {fileID: 3194781780329869124, guid: 1197eaed5df3dd54ea49076c573fc5bf, type: 3}
 --- !u!33 &3083166921826927145
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -976,10 +983,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeTilDeath: 3
-  damage: 10
+  damage: 8
   isBullet: 1
   rbSpeed: 4000
   bulletVariance: 5
+  hitEffect: {fileID: 3194781780329869124, guid: 1197eaed5df3dd54ea49076c573fc5bf, type: 3}
 --- !u!33 &5153747513830977781
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1121,10 +1129,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeTilDeath: 3
-  damage: 10
+  damage: 8
   isBullet: 1
   rbSpeed: 4000
   bulletVariance: 5
+  hitEffect: {fileID: 3194781780329869124, guid: 1197eaed5df3dd54ea49076c573fc5bf, type: 3}
 --- !u!33 &425060660095287265
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1266,10 +1275,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeTilDeath: 3
-  damage: 10
+  damage: 8
   isBullet: 1
   rbSpeed: 4000
   bulletVariance: 5
+  hitEffect: {fileID: 3194781780329869124, guid: 1197eaed5df3dd54ea49076c573fc5bf, type: 3}
 --- !u!33 &6912902370499608561
 MeshFilter:
   m_ObjectHideFlags: 0
